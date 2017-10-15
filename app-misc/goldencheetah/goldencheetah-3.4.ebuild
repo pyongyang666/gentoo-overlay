@@ -23,7 +23,8 @@ DEPEND="
 	dev-qt/qtscript:5
 	dev-qt/qtserialport:5
 	dev-qt/qtsvg:5
-	dev-qt/qttranslations:5"
+	dev-qt/qttranslations:5
+	dev-qt/qtbluetooth:5"
 RDEPEND="${DEPEND}"
 
 S="${WORKDIR}/${MY_PN}-${PV}"
