@@ -37,6 +37,9 @@ src_prepare() {
 
 	sed -e "s:#QMAKE_LRELEASE:QMAKE_LRELEASE:" src/gcconfig.pri.in > src/gcconfig.pri || die
 	sed -e "s:/usr/local/:/usr/:" qwt/qwtconfig.pri.in > qwt/qwtconfig.pri || die
+	
+	#Force build against QT5.
+	export QT_SELECT=5
 }
 
 src_configure() {
