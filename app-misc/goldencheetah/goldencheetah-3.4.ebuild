@@ -37,10 +37,10 @@ src_prepare() {
 	#eapply "${FILESDIR}"/${P}-make_pair-fix.patch
 
 	sed -e "s:#QMAKE_LRELEASE = /usr/bin/lrelease:QMAKE_LRELEASE = /usr/lib64/qt5/bin/lrelease:" src/gcconfig.pri.in > src/gcconfig.pri || die
-	sed -e "s:#QMAKE_CXXFLAGS += -O3:QMAKE_CXXFLAGS += -O3:" src/gcconfig.pri > src/gcconfig.pri || die
-	sed -e "s:#QMAKE_LEX = flex:QMAKE_LEX = flex:" src/gcconfig.pri > src/gcconfig.pri || die
-	sed -e "s:#QMAKE_YACC = bison:QMAKE_YACC = bison:" src/gcconfig.pri > src/gcconfig.pri || die
-	sed -e "s:#LIBZ_LIBS    = -lz:LIBZ_LIBS    = -lz:" src/gcconfig.pri > src/gcconfig.pri || die
+	#sed -e "s:#QMAKE_CXXFLAGS += -O3:QMAKE_CXXFLAGS += -O3:" src/gcconfig.pri > src/gcconfig.pri || die
+	#sed -e "s:#QMAKE_LEX = flex:QMAKE_LEX = flex:" src/gcconfig.pri > src/gcconfig.pri || die
+	#sed -e "s:#QMAKE_YACC = bison:QMAKE_YACC = bison:" src/gcconfig.pri > src/gcconfig.pri || die
+	#sed -e "s:#LIBZ_LIBS    = -lz:LIBZ_LIBS    = -lz:" src/gcconfig.pri > src/gcconfig.pri || die
 	sed -e "s:/usr/local/:/usr/:" qwt/qwtconfig.pri.in > qwt/qwtconfig.pri || die
 	
 	#Force build against QT5.
