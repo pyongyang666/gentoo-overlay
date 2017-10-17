@@ -16,6 +16,9 @@ SLOT="0"
 KEYWORDS="~amd64"
 IUSE=""
 
+# Emerged x11-libs/qwt-6.1.3-r1 during the testing for this ebuild. 
+# Don't think it's actually a dependency, but making a note in case I'm wrong. 
+
 DEPEND="
 	dev-qt/qtconcurrent:5
 	dev-qt/qtmultimedia:5[widgets]
