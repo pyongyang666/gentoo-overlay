@@ -9,7 +9,7 @@ MY_PN="GoldenCheetah"
 
 DESCRIPTION="Cycling performance software"
 HOMEPAGE="http://www.goldencheetah.org/"
-SRC_URI="https://github.com/GoldenCheetah/${MY_PN}/archive/V${PV}.tar.gz -> ${P}.tar.gz"
+SRC_URI="https://github.com/GoldenCheetah/${MY_PN}/archive/V${PV}-DEV1710.tar.gz -> ${P}.tar.gz"
 
 LICENSE="GPL-2"
 SLOT="0"
